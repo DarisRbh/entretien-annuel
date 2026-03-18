@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
 import { createClient } from '@/lib/supabase'
-import { Search, Download, Upload, Mail, ChevronLeft, ChevronRight, X, Save, Plus } from 'lucide-react'
+import { Search, Download, Upload, Mail, ChevronLeft, ChevronRight, X, Save} from 'lucide-react'
 import { format } from 'date-fns'
 import { fr } from 'date-fns/locale'
 import type { Client, StatutClient } from '@/types'
