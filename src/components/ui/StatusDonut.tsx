@@ -43,12 +43,12 @@ export default function StatusDonut({
             strokeDashoffset={-s.offset}
           />
         ))}
-        <text x="40" y="36" textAnchor="middle" fill="#e8eaf0" fontSize="13" fontWeight="600" className="rotate-90 origin-center" style={{ rotate: '90deg' }}>
-          {total}
-        </text>
-        <text x="40" y="48" textAnchor="middle" fill="#6b7280" fontSize="8" style={{ rotate: '90deg' }}>
-          clients
-        </text>
+       <text x="40" y="38" textAnchor="middle" fill="#e8eaf0" fontSize="13" fontWeight="600">
+  {total}
+</text>
+<text x="40" y="50" textAnchor="middle" fill="#6b7280" fontSize="8">
+  clients
+</text>
       </svg>
 
       <div className="flex flex-col gap-1.5 flex-1">
