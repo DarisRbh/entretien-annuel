@@ -1,4 +1,5 @@
 'use client'
+import { Search, Download, Upload, Mail, ChevronLeft, ChevronRight, X, Save, Plus } from 'lucide-react'
 import { useState, useEffect, useRef } from 'react'
 import { createClient } from '@/lib/supabase'
 import { Search, Download, Upload, Mail, ChevronLeft, ChevronRight, X, Save } from 'lucide-react'
