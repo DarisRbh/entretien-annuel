@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase'
-import { LayoutDashboard, Users, Calendar, Activity, Clock, Settings, LogOut } from 'lucide-react'
+import { LayoutDashboard, Users, Calendar, Settings, LogOut } from 'lucide-react'
 import type { User } from '@supabase/supabase-js'
 
 const navItems = [
@@ -11,10 +11,7 @@ const navItems = [
   { href: '/dashboard/calendrier', label: 'Calendrier', icon: Calendar },
 ]
 
-const autoItems = [
-  { href: '/dashboard/activite', label: 'Activité n8n', icon: Activity },
-  { href: '/dashboard/relances', label: 'Relances', icon: Clock },
-]
+const autoItems: never[] = []
 
 export default function Sidebar({ user }: { user: User }) {
   const pathname = usePathname()
