@@ -135,6 +135,9 @@ export default function ClientsPage() {
           <p className="text-xs text-[#6b7280] font-mono mt-0.5">{clients.length} clients</p>
         </div>
         <div className="flex gap-2">
+          <button className="btn btn-primary" onClick={() => setShowAddModal(true)}>
+  <Plus size={13} /> Nouveau client
+</button>
           <button className="btn" onClick={exportExcel}>
             <Download size={13} /> Exporter Excel
           </button>
